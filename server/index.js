@@ -33,7 +33,7 @@ app.get('/',(req,res) => {
     })
 })
 
-app.post('create', (req,res) => {
+app.post('/create', (req,res) => {
     const pool = openDb()
     const { task } = req.body
 
