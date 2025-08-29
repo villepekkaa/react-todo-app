@@ -1,13 +1,16 @@
-import {pool} from '../helper/db.js'
 import {Router} from 'express'
-import {hash, compare} from 'bcrypt'
+import {signUp, signIn} from '../controllers/UserController.js'
 import jwt from 'jsonwebtoken'
-
 const {sign} = jwt
 
 const router = Router()
 
-router.post('/signup', (req,res,next) => {
+router.post('/signup', signUp)
+router.post('/signin', signIn)
+
+export default router
+
+/* router.post('/signup', (req,res,next) => {
     const {user} = req.body
 
     if (!user ||!user.email ||!user.password) {
@@ -66,4 +69,4 @@ router.post('/signin',(req,res,next) => {
     })
 })
 
-export default router
+export default router */
