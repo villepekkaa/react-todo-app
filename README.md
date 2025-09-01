@@ -1,12 +1,20 @@
-# React + Vite
+# React Todo Webapp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a single‑developer implementation of a Todo web application created for the Web‑Application Development Project (15 ECTS) course at Oulu University of Applied Sciences. The primary goal of this assignment was to gain hands‑on experience with modern front‑end and back‑end technologies that will be employed in the larger capstone project later in the course.
 
-Currently, two official plugins are available:
+Assignment consists  8 different parts and this final version has them all built in. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology Stack
+- Front‑end: React (JavaScript)
+- Back‑end: Node.js with Express, structured using the Model‑View‑Controller (MVC) pattern
+- Database: PostgreSQL (separate instances for development and automated testing)
+- Testing: Mocha framework for automated back‑end tests
 
-## Expanding the ESLint configuration
+## Key Features
+- User Authentication – A simple registration and login flow; authentication state is persisted in localStorage and cleared when the browser session ends.
+- Task Management – Authenticated users can create, view and delete items from the list.
+- Robust Architecture – The back‑end follows MVC principles and incorporates centralized error‑handling utilities.
+- Automated Testing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Disclaimer: This application was developed solely for academic purposes and is not intended for production deployment.
+
